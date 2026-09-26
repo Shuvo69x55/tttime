@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+  <div class="admin-container">
+
+    <header class="admin-header">
+      <h1>Admin Panel</h1>
+      <p>Manage your website</p>
+    </header>
+
+    <main class="admin-content">
+
+      <section class="admin-card">
+        <h2>Dashboard</h2>
+        <p>Welcome to your admin panel.</p>
+      </section>
+
+      <section class="admin-card">
+        <h2>Website Status</h2>
+        <div class="status">
+          <span class="dot"></span>
+          Website Online
+        </div>
+      </section>
+
+      <section class="admin-card">
+        <h2>Quick Actions</h2>
+
+        <div class="buttons">
+          <button onclick="showMessage('Content updated successfully!')">
+            Update Content
+          </button>
+
+          <button onclick="showMessage('Settings opened!')">
+            Settings
+          </button>
+
+          <button onclick="logout()">
+            Logout
+          </button>
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script>
+    function showMessage(message) {
+      alert(message);
+    }
+
+    function logout() {
+      alert("Logged out.");
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
