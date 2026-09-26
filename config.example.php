@@ -1,0 +1,1 @@
+<?php return ['db_host'=>'localhost','db_name'=>'tmtmine','db_user'=>'YOUR_DB_USER','db_pass'=>'YOUR_DB_PASSWORD','bot_token'=>'YOUR_BOT_TOKEN']; ?>
